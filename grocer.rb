@@ -48,7 +48,7 @@ if cart_item && cart_item[:count] >= coupons[counter][:num]
     cart_item[:count] -= coupons[counter][:num] 
   else
     cart_item_with_coupon = {
-      :item => couponed_item_name
+      :item => couponed_item_name,
       :price => coupons[counter][:cost] / coupons[counter][:num],
       :count => coupons[counter][:num],
       :clearance => cart_item[:clearance]
